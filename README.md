@@ -47,14 +47,6 @@
 ### 📈 Telemetry (the honest kind)
 
 <p align="center">
-  <img src="./github-metrics.svg" width="100%" alt="metrics"/>
-</p>
-
-<p align="center">
-  <img src="./profile-3d-contrib/profile-night-green.svg" width="100%" alt="3D contribution calendar"/>
-</p>
-
-<p align="center">
   <img height="165" src="https://streak-stats.demolab.com?user=ftaakash&hide_border=true&background=0d1117&ring=39d353&fire=39d353&currStreakLabel=39d353&sideLabels=c9d1d9&dates=8b949e&currStreakNum=c9d1d9&sideNums=c9d1d9" />
 </p>
 
