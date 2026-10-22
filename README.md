@@ -25,7 +25,7 @@
 | 🪜 | **[authz-ladder](https://github.com/ftaakash/authz-ladder)** | Regression-tests authorization invariants in Dataspace Protocol connectors (Eclipse EDC), using already-patched CVEs as the correctness oracle. |
 | 🔒 | **[MCP-Lock](https://github.com/ftaakash/MCP-Lock)** | Provenance-aware pre-install verification for coding agents: check the MCP server *before* it runs. |
 | 🧾 | **[PDR](https://github.com/ftaakash/PDR)** | Provenance Debt at Resolution: what you inherit the moment a dependency resolves. |
-| 🔥 | **[Hades](https://github.com/ftaakash/Hades)** | Deciding what to check when ICS telemetry might be lying: of four pre-registered experiments, only joint belief over the attack and sensor trust held up (27% lower regret, simulator only). |
+| 🔥 | **[Hades](https://github.com/ftaakash/Hades)** | Deciding which sensors to trust when an attacker can fake the telemetry. |
 
 ### 🛠️ Things I've shipped
 
