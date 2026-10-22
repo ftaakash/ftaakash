@@ -32,7 +32,7 @@
 | | Project | Stack |
 |:-:|---|---|
 | 🏥 | **[DischargeFlow](https://github.com/ftaakash/DischargeFlow)** · AI-powered hospital discharge management | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
-| 🧠 | **[SkillGraph](https://github.com/ftaakash/SkillGraph)** · upload a résumé, get your skill graph and a plan to close the gaps | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🧠 | **[SkillGraph](https://github.com/ftaakash/SkillGraph)** · AI career platform: résumé → skill graph, live job-market demand, gap-closing sprints and Smart Apply · [live](https://skillgraphai.vercel.app) | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 
 ---
 
