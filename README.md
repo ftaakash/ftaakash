@@ -31,7 +31,7 @@
 
 | | Project | Stack |
 |:-:|---|---|
-| 🏥 | **[DischargeFlow](https://github.com/ftaakash/DischargeFlow)** · AI-powered hospital discharge management | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) |
+| 🏥 | **[DischargeFlow](https://github.com/ftaakash/DischargeFlow)** · Hospital discharge platform: HL7 v2 ADT and SMART on FHIR, encrypted PHI with Postgres row-level security, signed AI discharge summaries and a tamper-evident audit trail · [live](https://dischargeflow.vercel.app) | ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white) ![React](https://img.shields.io/badge/-React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) |
 | 🧠 | **[SkillGraph](https://github.com/ftaakash/SkillGraph)** · AI career platform: résumé → skill graph, live job-market demand, gap-closing sprints and Smart Apply · [live](https://skillgraphai.vercel.app) | ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 
 ---
