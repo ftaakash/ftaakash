@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="900" height="330" role="img" aria-label="Aakash G S, AI × Security">
+<style>
+  .base { fill: #e6edf3; }
+  .red  { fill: #ff2e63; opacity: .85; }
+  .cyan { fill: #08f7fe; opacity: .85; }
+  .ab-r { animation: abr 3.2s infinite steps(1); }
+  .ab-c { animation: abc 3.2s infinite steps(1); }
+  .s1 { animation: s1 3.2s infinite steps(1); }
+  .s2 { animation: s2 3.2s infinite steps(1); }
+  .shake { animation: shake 3.2s infinite steps(1); }
+  .cursor { animation: blink 1s infinite steps(1); }
+  @keyframes abr { 0%{transform:translate(-3px,0)} 8%{transform:translate(-7px,1px)} 12%{transform:translate(-2px,-1px)}
+                    16%{transform:translate(-3px,0)} 62%{transform:translate(-9px,0)} 66%{transform:translate(-3px,0)} }
+  @keyframes abc { 0%{transform:translate(3px,0)} 8%{transform:translate(7px,-1px)} 12%{transform:translate(2px,1px)}
+                    16%{transform:translate(3px,0)} 62%{transform:translate(9px,0)} 66%{transform:translate(3px,0)} }
+  @keyframes s1 { 0%{clip-path:inset(0 0 100% 0);transform:none}
+                   6%{clip-path:inset(18% 0 62% 0);transform:translate(-14px,0)}
+                   9%{clip-path:inset(55% 0 28% 0);transform:translate(12px,0)}
+                   12%{clip-path:inset(72% 0 8% 0);transform:translate(-8px,0)}
+                   15%{clip-path:inset(0 0 100% 0);transform:none}
+                   60%{clip-path:inset(35% 0 45% 0);transform:translate(18px,0)}
+                   64%{clip-path:inset(0 0 100% 0);transform:none} }
+  @keyframes s2 { 0%{clip-path:inset(0 0 100% 0);transform:none}
+                   7%{clip-path:inset(40% 0 44% 0);transform:translate(16px,0)}
+                   10%{clip-path:inset(8% 0 80% 0);transform:translate(-10px,0)}
+                   13%{clip-path:inset(0 0 100% 0);transform:none}
+                   61%{clip-path:inset(66% 0 14% 0);transform:translate(-16px,0)}
+                   65%{clip-path:inset(0 0 100% 0);transform:none} }
+  @keyframes shake { 0%{transform:none} 7%{transform:translate(2px,-1px)} 10%{transform:translate(-2px,1px)} 14%{transform:none}
+                      61%{transform:translate(-3px,0)} 64%{transform:none} }
+  @keyframes blink { 0%{opacity:1} 50%{opacity:0} }
+</style>
+<defs>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#000" opacity=".35"/></pattern>
+</defs>
+<rect width="900" height="330" rx="10" fill="#0d1117" stroke="#30363d"/>
+<g class="shake">
+  <g class="ab-r"><text class="red" x="40" y="168" textLength="340" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="84" font-weight="800">AAKASH</text></g>
+  <g class="ab-c"><text class="cyan" x="40" y="168" textLength="340" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="84" font-weight="800">AAKASH</text></g>
+  <text class="base" x="40" y="168" textLength="340" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="84" font-weight="800">AAKASH</text>
+  <g class="s1"><text class="base" x="40" y="168" textLength="340" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="84" font-weight="800">AAKASH</text></g>
+  <g class="s2"><text class="cyan" x="40" y="168" textLength="340" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="84" font-weight="800">AAKASH</text></g>
+</g>
+<rect x="20" y="80" width="400" height="110" fill="url(#scan)"/>
+<text x="42" y="218" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="24" font-weight="bold" fill="#39d353">AI × Security<tspan class="cursor">▌</tspan></text>
+<text x="42" y="250" font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="13" fill="#6e7681">github.com/ftaakash</text>
+<line x1="430" y1="28" x2="430" y2="302" stroke="#30363d"/>
+<g font-family="'JetBrains Mono','Fira Code',Consolas,'DejaVu Sans Mono',Menlo,monospace" font-size="12.5"><text x="455" y="46.0" xml:space="preserve"><tspan fill="#39d353" font-weight="bold">aakash</tspan><tspan fill="#e6edf3">@</tspan><tspan fill="#39d353" font-weight="bold">ftaakash</tspan><tspan fill="#6e7681"> ──────────────────────────────────</tspan></text><text x="455" y="62.5" xml:space="preserve"><tspan fill="#39d353">Name: </tspan><tspan fill="#6e7681">.................................</tspan><tspan fill="#e6edf3"> Aakash G S</tspan></text><text x="455" y="79.0" xml:space="preserve"><tspan fill="#39d353">Studying: </tspan><tspan fill="#6e7681">...........</tspan><tspan fill="#e6edf3"> B.Tech CS &amp; Business Systems</tspan></text><text x="455" y="95.5" xml:space="preserve"><tspan fill="#39d353">Campus: </tspan><tspan fill="#6e7681">..................</tspan><tspan fill="#e6edf3"> SRM IST, Kattankulathur</tspan></text><text x="455" y="112.0" xml:space="preserve"><tspan fill="#39d353">Class of: </tspan><tspan fill="#6e7681">...................................</tspan><tspan fill="#e6edf3"> 2027</tspan></text><text x="455" y="128.5" xml:space="preserve"><tspan fill="#39d353">Based in: </tspan><tspan fill="#6e7681">............................</tspan><tspan fill="#e6edf3"> Chennai, IN</tspan></text><text x="455" y="161.5" xml:space="preserve"><tspan fill="#e6edf3" font-weight="bold">— Research </tspan><tspan fill="#6e7681">───────────────────────────────────────</tspan></text><text x="455" y="178.0" xml:space="preserve"><tspan fill="#39d353">Theme: </tspan><tspan fill="#6e7681">............</tspan><tspan fill="#e6edf3"> intermediaries nobody verifies</tspan></text><text x="455" y="194.5" xml:space="preserve"><tspan fill="#39d353">Into: </tspan><tspan fill="#6e7681">.................</tspan><tspan fill="#e6edf3"> cybersecurity · AI systems</tspan></text><text x="455" y="211.0" xml:space="preserve"><tspan fill="#39d353"> </tspan><tspan fill="#6e7681">......................</tspan><tspan fill="#e6edf3"> provenance · authz testing</tspan></text><text x="455" y="244.0" xml:space="preserve"><tspan fill="#e6edf3" font-weight="bold">— Building </tspan><tspan fill="#6e7681">───────────────────────────────────────</tspan></text><text x="455" y="260.5" xml:space="preserve"><tspan fill="#39d353">Now: </tspan><tspan fill="#6e7681">.................</tspan><tspan fill="#e6edf3"> regression oracles for CVEs</tspan></text><text x="455" y="277.0" xml:space="preserve"><tspan fill="#39d353"> </tspan><tspan fill="#6e7681">...................</tspan><tspan fill="#e6edf3"> pre-install checks for agents</tspan></text><text x="455" y="293.5" xml:space="preserve"><tspan fill="#39d353"> </tspan><tspan fill="#6e7681">..................................</tspan><tspan fill="#e6edf3"> AI health-tech</tspan></text></g>
+</svg>
