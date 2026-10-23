@@ -39,8 +39,11 @@ while start < now:
     start = end
 
 dates = sorted(days)
-total = sum(days.values())
-first = next((d for d in dates if days[d]), dates[0])
+# same figure as "N contributions in the last year" on the profile
+year_total = gql(
+    "query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions}}}}", u=USER
+)["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+year_start = (now.astimezone(IST).date() - dt.timedelta(days=365)).isoformat()
 
 # longest streak
 longest, run, run_start, best = 0, 0, None, (None, None)
@@ -78,9 +81,9 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewB
 <line x1="165" y1="28" x2="165" y2="170" stroke="{LINE}"/>
 <line x1="330" y1="28" x2="330" y2="170" stroke="{LINE}"/>
 <g {F} text-anchor="middle">
-  <text class="f" x="82.5" y="79" font-size="28" font-weight="700" fill="{FG}">{total:,}</text>
-  <text class="f" x="82.5" y="115" font-size="14" fill="{FG}">Total Contributions</text>
-  <text class="f" x="82.5" y="145" font-size="12" fill="{MUTED}">{fmt_full(first)} - Present</text>
+  <text class="f" x="82.5" y="79" font-size="28" font-weight="700" fill="{FG}">{year_total:,}</text>
+  <text class="f" x="82.5" y="115" font-size="14" fill="{FG}">Contributions (last year)</text>
+  <text class="f" x="82.5" y="145" font-size="12" fill="{MUTED}">{fmt_full(year_start)} - Present</text>
 
   <circle cx="247.5" cy="71" r="40" fill="none" stroke="{G}" stroke-width="5"/>
   <rect x="235" y="15" width="25" height="26" fill="{BG}"/>
@@ -96,4 +99,4 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewB
 </svg>'''
 os.makedirs("assets", exist_ok=True)
 open(OUT, "w").write(svg)
-print(f"total={total} current={cur} longest={longest}")
+print(f"total={year_total} current={cur} longest={longest}")
