@@ -99,4 +99,8 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewB
 </svg>'''
 os.makedirs("assets", exist_ok=True)
 open(OUT, "w").write(svg)
+t = now.astimezone(IST).date()
+for back in (364, 365, 366):
+    k = (t - dt.timedelta(days=back)).isoformat()
+    print(f"::notice::sum_from_{back}={sum(v for d, v in days.items() if d >= k)} api={year_total} today={t}")
 print(f"total={year_total} current={cur} longest={longest}")
