@@ -1,5 +1,5 @@
 """Build assets/streak.svg from GitHub's contribution calendar (same data as the profile graph)."""
-import datetime as dt, json, os, urllib.request
+import datetime as dt, json, os, re, urllib.request
 
 USER = os.environ["GH_USER"]
 TOKEN = os.environ["GH_TOKEN"]
@@ -43,6 +43,18 @@ dates = sorted(days)
 year_total = gql(
     "query($u:String!){user(login:$u){contributionsCollection{contributionCalendar{totalContributions}}}}", u=USER
 )["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+# The public profile also counts private contributions the Actions token can't see,
+# so read the number exactly as the profile page shows it.
+try:
+    page = urllib.request.urlopen(
+        urllib.request.Request(f"https://github.com/users/{USER}/contributions", headers={"User-Agent": "streak-card"}),
+        timeout=20,
+    ).read().decode()
+    m = re.search(r"([\d,]+)\s+contributions?\s+in the last year", page)
+    if m:
+        year_total = int(m.group(1).replace(",", ""))
+except Exception as e:
+    print(f"::warning::profile page not readable, using API total ({e})")
 year_start = (now.astimezone(IST).date() - dt.timedelta(days=365)).isoformat()
 
 # longest streak
@@ -99,8 +111,4 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewB
 </svg>'''
 os.makedirs("assets", exist_ok=True)
 open(OUT, "w").write(svg)
-t = now.astimezone(IST).date()
-for back in (364, 365, 366):
-    k = (t - dt.timedelta(days=back)).isoformat()
-    print(f"::notice::sum_from_{back}={sum(v for d, v in days.items() if d >= k)} api={year_total} today={t}")
 print(f"total={year_total} current={cur} longest={longest}")
