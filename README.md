@@ -47,7 +47,7 @@
 ### 📈 Telemetry (the honest kind)
 
 <p align="center">
-  <img height="165" src="./assets/streak.svg?v=1794104883" />
+  <img height="165" src="./assets/streak.svg?v=1794133097" />
 </p>
 
 ---
