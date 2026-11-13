@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://github.com/ftaakash">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3000&pause=900&color=39D353&center=true&vCenter=true&width=620&lines=%24+whoami+%E2%86%92+CS+%26+Business+Systems+%40+SRM+IST;Breaking+authorization+so+you+don't+have+to;Provenance+%C2%B7+MCP+%C2%B7+Dataspace+connectors;Shipping+AI+tools+that+actually+get+used" alt="typing" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3000&pause=900&color=39D353&center=true&vCenter=true&width=620&lines=%24+whoami+%E2%86%92+CS+%26+Business+Systems+%40+SRM+IST;Breaking+authorization+so+you+don't+have+to;Shipping+AI+tools+that+actually+get+used" alt="typing" />
   </a>
 </p>
 
